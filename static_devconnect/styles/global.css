@@ -1,0 +1,48 @@
+/* Você importa a fonte vindo do google(se o google cair você não vai conseguir usar a fonte) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --cor-preto: #000000;
+    --cor-branco: #fff;
+    --cor-laranja: #CF8F4A;
+    --cor-azul-esverdeado: #4EA8B1;
+    --cor-verde-mato: #58A18D;
+    --cor-roxo: #6852AD;
+
+    --borda: 2px solid var(--cor-azul-esverdeado);
+    --borda-arredondada: 10px;
+
+    --tamanho-fonte: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+/* Você salva a fonte no seu site(o seu site vai ter essa fonte não vai presisar de nada) */
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora/Lora-Italic-VariableFont_wght.ttf), 
+         url(../fonts/Lora/Lora-VariableFont_wght.ttf)
+}
+
+ /* @font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}  */
+
+    /* Seletor global */
+    *{
+        font-family: "Lora", serif;
+        /* font-family: Bebas_Neue; */
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* O valor total do tamanho do elemento conta tanto com espaço interno e as bordas */
+    }
+    body{
+        background-color: var(--cor-branco);
+    }
+
+    h1{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
