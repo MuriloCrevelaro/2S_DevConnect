@@ -8,8 +8,12 @@
     --cor-azul-esverdeado: #4EA8B1;
     --cor-verde-mato: #58A18D;
     --cor-roxo: #6852AD;
+    --cor-cinsa:#f8f8f8;
+    --cor-cinsa2:#999;
+    --cor-azul: #5f9efd;
 
     --borda: 2px solid var(--cor-azul-esverdeado);
+    --borda2: 2px solid var(--cor-azul);
     --borda-arredondada: 10px;
 
     --tamanho-fonte: 20px;
@@ -46,3 +50,13 @@
         z-index: -1;
         opacity: 0;
     }
+
+/* formulario */
+
+input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var(--cor-laranja);
+}
+

@@ -11,10 +11,11 @@ main{
 main > div{
     background-color: rgb(255, 255, 255);
     display: flex;  /* Ativa o flex */
+    padding: 5px;
     border: var(--borda2);
-    /* height: 500px; */
+    border-radius: var(--borda-arredondada);
     /* justify-content: space-between; */
-    gap: 15px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
 }
@@ -48,14 +49,12 @@ form{
     justify-content: center;
     align-items: center;
     background-color: var(--cor-branco);
-    border: var(--borda);
 }
 
 
 
 /* Formulario */
 #formulario{
-    height: 300px;
     /* margin-top: 15px; */
     padding: 3%;
     gap: 10px;
@@ -67,9 +66,8 @@ form{
 
 #cadastro{
     width: 100%;
-    max-width: 340px;
     height: 50px;
-    border-radius: var(--borda-arredondada);
+    max-width: 340px;
 }
 
 .estilo-formulario{
@@ -134,18 +132,36 @@ input{
 a{
     color: var(--cor-roxo);
     cursor: pointer;
+    align-items: center;
 }
 p{
     justify-content: center;
     align-items: center;
+    height: 30px;
+    /* width: 100%; */
+    margin-top: 5px;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinsa2);
+    text-align: center;
 }
 
-.botão-azul{
+section{
+    width: 100%;
+}
+
+#OU{
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinsa2);
+}
+
+.botao-azul{
     background-color: var(--cor-roxo);
     border-radius: var(--borda-arredondada);
     border: none;
-    height: 35px;
+    height: 30px;
     width: 100%;
+    margin-top: 5px;
 
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-sm);
@@ -153,7 +169,6 @@ p{
 }
 
 #formulario > p{
-    text-transform: uppercase;
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinsa2);
 }
@@ -161,4 +176,25 @@ p{
 #formulari > a > #cadastro > p > a{
     text-decoration: none;
     color: var(--cor-laranja);
+}
+
+#letrinhas{
+    font-size: 10px;
+}
+
+#campo-upload{
+    display: none; /* oculta os elementos */ 
+   /* display: block;*/ /* elementos em coluna - um de baixo do outro */
+   /* display: inline;*/ /* elementos em linha - um do lado do outro */
+}
+
+#texto-campo-upload{
+    display: inline-block; /* herdou do block - height, widthe margin-top/bottom
+    /*herdou do line - por padrão fica um do lado do outro e ocupa inicialmento o tamanho do conteudo*/
+    background-color: var(--cor-roxo);
+    border-radius: var(--borda-arredondada);
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
 }

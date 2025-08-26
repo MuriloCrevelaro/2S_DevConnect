@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Tela login da DevConnect </title>
 
-        <link rel="shortcut icon" href="../images/DevCon - Logo(Resumida).svg" type="image/x-icon">
-            <link rel="stylesheet" href="../styles/global.css">
-            <link rel="stylesheet" href="../styles/login.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tela login da DevConnect </title>
 
-        <meta name="author" content="DevConnect - Murilo Crevelaro">
-        <meta name="description" content="Site da DevConnect">
-        <meta name="keywors" content="comunicação, Dev, Connect, DevConnect, aplicativo">
-    </head>
-    <body>
-        <h1> Tela principal login </h1>
-        <main>
-            <div>
-                <!-- formulario -->
-                <form id="formulario" class="estilo-formulario">
-                    <img src="../images/DevConnect - Logo.svg">
-                    <div>
-                        <label for=""></label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
-                        <label for=""></label>
-                        <input type="password" name="" id="">
-                    </div>
-                    <button type="submit"> Entrar </button>
-                        <p> ou </p>
-                    <a href="https://www.youtube.com/watch?v=G_V0NosdsOE"> Esquaceu a senha? </a>
-                </form>
-                <!-- Seção cadastro -->
-                <section id="cadastro" class="estilo-cadastro">
-                    <p> Não tem uma conta </p> <span> Cadastre-se </span>
-                </section>
+    <link rel="shortcut icon" href="../images/DevCon - Logo(Resumida).svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
 
-                <p class="informação"> Obtenha o aplicativo </p>
+    <meta name="author" content="DevConnect - Murilo Crevelaro">
+    <meta name="description" content="Site da DevConnect">
+    <meta name="keywors" content="comunicação, Dev, Connect, DevConnect, aplicativo">
+</head>
+
+<body>
+    <h1> Tela principal login </h1>
+    <main>
+        <div>
+            <!-- formulario -->
+            <form id="formulario" class="estilo-formulario">
+                <img src="../images/DevConnect.svg">
+                <div>
+                    <label for=""> Nome do usuário: </label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for=""> Senha do usuario: </label>
+                    <input type="password" name="" id="">
+                </div>
                 
-                <!-- Seção instalação -->
-                <section id="instalação">
-                    <img src="../images/app-store.svg" alt="Logo do app-store">
-                    <img src="../images/google-play.svg" alt="logo do google-play">
-                </section>
+                <!-- <button type="reset"> Limpar </button> -->
+                <button type="submit" class="botão-azul"> Entrar </button>
+                <p> ou </p>
+                <a href="https://www.youtube.com/watch?v=G_V0NosdsOE"> Esquaceu a senha? </a>
+            </form>
+            <!-- Seção cadastro -->
+            <section id="cadastro" class="estilo-cadastro">
+                <p> Não tem uma conta <a href="../Pages/cadastro.html"> Cadastre-se </a> </p>
+            </section>
 
-            </div>
-        </main>
-    </body>
+            <p class="informação"> Obtenha o aplicativo </p>
+
+            <!-- Seção instalação -->
+            <section id="instalação">
+                <img src="../images/app-store.svg" alt="Logo do app-store">
+                <img src="../images/google-play.svg" alt="logo do google-play">
+            </section>
+
+        </div>
+    </main>
+</body>
+
 </html>
