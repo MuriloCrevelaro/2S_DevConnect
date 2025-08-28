@@ -168,6 +168,10 @@ section{
     font-weight: 1;
 }
 
+.botao-azul a{
+    color: white;
+}
+
 #formulario > p{
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinsa2);
@@ -194,7 +198,7 @@ section{
     background-color: var(--cor-roxo);
     border-radius: var(--borda-arredondada);
     width: 100%;
-    height: 35px;
     padding: 10px;
+    height: 35px;
     text-align: center;
 }

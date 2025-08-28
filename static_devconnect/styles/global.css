@@ -1,15 +1,15 @@
 /* Você importa a fonte vindo do google(se o google cair você não vai conseguir usar a fonte) */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-:root{
+:root {
     --cor-preto: #000000;
     --cor-branco: #fff;
     --cor-laranja: #CF8F4A;
     --cor-azul-esverdeado: #4EA8B1;
     --cor-verde-mato: #58A18D;
     --cor-roxo: #6852AD;
-    --cor-cinsa:#f8f8f8;
-    --cor-cinsa2:#999;
+    --cor-cinsa: #f8f8f8;
+    --cor-cinsa2: #999;
     --cor-azul: #5f9efd;
 
     --borda: 2px solid var(--cor-azul-esverdeado);
@@ -20,43 +20,141 @@
     --tamanho-fonte-md: 16px;
     --tamanho-fonte-sm: 14px;
 }
+
 /* Você salva a fonte no seu site(o seu site vai ter essa fonte não vai presisar de nada) */
 @font-face {
     font-family: Lora;
-    src: url(../fonts/Lora/Lora-Italic-VariableFont_wght.ttf), 
-         url(../fonts/Lora/Lora-VariableFont_wght.ttf)
+    src: url(../fonts/Lora/Lora-Italic-VariableFont_wght.ttf),
+        url(../fonts/Lora/Lora-VariableFont_wght.ttf)
 }
 
- /* @font-face {
+/* @font-face {
     font-family: BebasNeue;
     src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }  */
 
-    /* Seletor global */
-    *{
-        font-family: "Lora", serif;
-        /* font-family: Bebas_Neue; */
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        /* O valor total do tamanho do elemento conta tanto com espaço interno e as bordas */
-    }
-    body{
-        background-color: var(--cor-branco);
-    }
+/* Seletor global */
+* {
+    font-family: "Lora", serif;
+    /* font-family: Bebas_Neue; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* O valor total do tamanho do elemento conta tanto com espaço interno e as bordas */
+}
 
-    h1{
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
+body {
+    background-color: var(--cor-branco);
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
 
 /* formulario */
 
-input{
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    /* max-width: 1440; */
+    background-color: var(--cor-branco);
+}
+
+input {
     width: 100%;
     height: 35px;
     border: var(--borda);
     background-color: var(--cor-laranja);
 }
 
+#campo-upload{
+    display: none;
+}
+
+#texto-upload{
+    display: inline-block;
+    background-color: var(--cor-roxo);
+    border-radius: var(--borda-arredondada);
+    width: 100%;
+    padding: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+#Cabeçalho {
+    /* vw pega o valor da janela */
+    width: 100%;
+    height: 80px;
+    /* Tem que ter a largura junto para ter o background-color funcionandxxo */
+    /* background-color: #ffeed7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* OLHA DEPOIS */
+    border-width: 1px;
+    /* Define uma borda fina de 1 pixel */
+    border-style: solid;
+    /* Define a borda como sólida */
+    background: linear-gradient(to right, #4EA8B1, #CF8F4A);
+    /* Exemplo de gradiente */
+    padding: 5px;
+    /* A espessura da borda */
+    /* border-radius: 10px; Borda arredondada (opcional) */
+    /* width: fit-content; Ajusta a largura ao conteúdo */
+    /* height: fit-content; Ajusta a altura ao conteúdo */
+
+}
+
+#Cabeçalho>nav {
+    /* background-color: #FFF1E2; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.cabeçalho-acoes {
+    /* background-color: #FFF1E2; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabeçalho-acoes>a {
+    display: flex;
+    align-items: center;
+}
+
+#Logo-mobile {
+    /* remove a exibição da imagem */
+    display: none;
+}
+
+#foto-perfil {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    /* Redimenciona a foto */
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* REPONSIVO */
+@media only screen and (max-width: 485px) {
+    #Logo-mobile {
+        display: initial;
+    }
+
+    #Logo-desktop {
+        display: none;
+    }
+}

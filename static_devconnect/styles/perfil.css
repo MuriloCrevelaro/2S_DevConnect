@@ -1,0 +1,18 @@
+main{
+    width: 100%;
+    min-height: 100vh;/* minimo de autura*/
+    /* Altura da janela do meu dispositivo */
+    background-image: linear-gradient(to top, #6852AD, #58A18D);
+    display: flex;
+    align-items: center;
+}
+
+main > div{
+    background-color: var(--cor-azul);
+    display: flex;
+    align-items: center;
+}
+
+form > img{
+    display: flex;
+}
