@@ -8,15 +8,18 @@
     --cor-azul-esverdeado: #4EA8B1;
     --cor-verde-mato: #58A18D;
     --cor-roxo: #6852AD;
+    --cor-roxo-escuro: #5437aa;
     --cor-cinsa: #f8f8f8;
     --cor-cinsa2: #999;
     --cor-azul: #5f9efd;
 
-    --borda: 2px solid var(--cor-azul-esverdeado);
+    --borda: 2px solid var(--cor-preto);
     --borda2: 2px solid var(--cor-azul);
     --borda-arredondada: 10px;
 
+    
     --tamanho-fonte: 20px;
+    --tamanho-fonte-lg: 25px;
     --tamanho-fonte-md: 16px;
     --tamanho-fonte-sm: 14px;
 }
@@ -28,10 +31,10 @@
         url(../fonts/Lora/Lora-VariableFont_wght.ttf)
 }
 
-/* @font-face {
+ @font-face {
     font-family: BebasNeue;
     src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
-}  */
+}  
 
 /* Seletor global */
 * {
@@ -83,6 +86,12 @@ input {
     text-align: center;
 }
 
+.sim{
+    background: linear-gradient(to left, #4EA8B1 0%, #CF8F4A 100%); /* Gradiente de verde para azul */
+    width: 100%;
+    padding: 3px;
+}
+
 /* Cabeçalho */
 #Cabeçalho {
     /* vw pega o valor da janela */
@@ -93,20 +102,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 
-    /* OLHA DEPOIS */
-    border-width: 1px;
-    /* Define uma borda fina de 1 pixel */
-    border-style: solid;
-    /* Define a borda como sólida */
-    background: linear-gradient(to right, #4EA8B1, #CF8F4A);
-    /* Exemplo de gradiente */
-    padding: 5px;
-    /* A espessura da borda */
-    /* border-radius: 10px; Borda arredondada (opcional) */
-    /* width: fit-content; Ajusta a largura ao conteúdo */
-    /* height: fit-content; Ajusta a altura ao conteúdo */
+    background: #fff; /* Fundo preto para o conteúdo */
 
 }
 

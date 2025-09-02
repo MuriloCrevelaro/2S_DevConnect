@@ -1,13 +1,11 @@
 main {
-    background-color: aqua;
+    background-color: #FFF1E2;
     min-height: 100vh;
     width: 100%;
 
     display: flex;
     justify-content: center;
 }
-
-
 
 #story {
     /* background-color: violet; */
@@ -48,18 +46,29 @@ main {
     text-decoration: none;
 }
 
-main>div {
+main > div {
     width: 100%;
-    height: 700px;
-    background-color:#6852AD;
+    background-color:#FFF1E2;
     display: flex;
     flex-direction: column;
-    margin: 70px;
+    margin: 10px;
     max-width: 900px;
     gap: 10px;
+    overflow-y: scroll;
 }
 
+div::-webkit-scrollbar{
+    width: 0;
+}
 
+#fundo-do-post{
+    background-color: #FFF1E2;
+}
+
+#fundo-post > img{
+    display: flex;
+    justify-content: center;
+}
 
 .card-story>a>img {
     border-radius: 50%;
@@ -79,16 +88,17 @@ main>div {
 #cadastro-publi{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
-    background-color: brown;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border: var(--borda);
 }
 
 #cadastro-publi > h2{
     padding: 5px;
-    background-color: tomato;
+    background-color: white;
     font-size: var(--tamanho-fonte-lg);
-    color: var(--cor-azul);
+    color: var(--cor-preto);
     font-weight: bolder;
 }
 
@@ -99,11 +109,100 @@ main>div {
     resize: none;/* Desabilita a opsão de redimencionar */
     padding: 10px;
     color: var(--cor-preto);
-    font-size: var(--tamanho-fonte-sm);
+    font-size: var(--tamanho-fonte-md);
+}
+
+#cadastro-publi > form > textarea::placeholder{
+    color: black;
+}
+
+.botão-azul{
+    background-color: var(--cor-azul);
+    font-size: var(--tamanho-fonte);
+    border: none;
+}
+
+#caixa{
+    opacity: 60%;
+}
+
+#texto-campo-upload{
+    font-size: var(--tamanho-fonte);
+    opacity: 60%;
+    background-color: #a7a7a7;
 }
 
 
+#alinhamento{
+    display: flex;
+    justify-content: space-between;
+}
 
+#post-corpo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 17px;
+}
+
+#fundo-do-post{
+    background-color: white;
+    border: var(--borda);
+
+}
+
+#acoes{
+    margin: 10px 15px 5px;
+    cursor: pointer;
+}
+
+#perfil-post{
+    display: flex;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    gap: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#imagem-post{
+    width: 100%;
+}
+
+#acoes-texto{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: var(--tamanho-fonte);
+}
+
+#acoes-texto > div,
+#acoes-texto > p{
+    margin: 7px;
+}
+
+#acoes-texto > button{
+    width: 29%;
+    justify-content: flex-start;
+    font-size: var(--tamanho-fonte);
+    /* height: 30%; */
+    border: none;
+}
+
+#comentarios-t{
+    opacity: 50%;
+    color: var(--cor-roxo-escuro);
+}
+
+#linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* 
 display: flex;
 flex-direction: column;
@@ -119,3 +218,28 @@ gap: 20px; */
     object-position: center;
     border-radius: 50%;
 } */
+
+/* como a Alexia fez */
+
+/* #descricao-publicacao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--tamanho-fonte-sm);
+    paddin: 0px 3% 
+    O zero px é para não juntar com com os outros 15 do outro e os 3% é para é para ter um diametro geral 
+}
+
+#descricao-publicacao{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 87px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    order:1;
+} 
+
+#descricao-publicacao > button{
+    border: none;
+    background-color: transparent;
+}*/
