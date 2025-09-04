@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title> Perfil da DevConnect </title>
-    
+
     <link rel="shortcut icon" href="../images/DevCon - Logo(Resumida).svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/perfil.css">
@@ -13,16 +14,77 @@
     <meta name="description" content="Site da DevConnect">
     <meta name="keywors" content="comunicação, Dev, Connect, DevConnect, aplicativo">
 </head>
+
 <body>
     <h1> Tela de perfil - DevConnect </h1>
-    <div>
-        <!-- formulario -->
-        <form id="informaçoes" class="informaçoes-perfil">
 
-            <img src="../images/DevConnect (Pequena).svg">
-            
-        </form>
+    <div class="sim">
+        <header id="Cabeçalho">
+            <nav>
+                <a id="Logo-desktop" href="./perfil.html">
+                    <img src="../images/DevConnect.svg" alt="Logo da empresa DevConnect">
+                </a>
+                <a id="Logo-mobile" href="./perfil.html">
+                    <img src="../images/DevCon - Logo(Resumida).svg" alt="Logo da empresa DevConnect">
+                </a>
+                <div class="cabeçalho-acoes">
+                    <a href="./perfil.html"> <img src="../images/Vector - Lupa.svg" alt="Icone da Lupa"></a>
+                    <a href="./perfil.html"><img src="../images/Vector - Casa.svg" alt="Icone da Casinha"></a>
+                    <a href="#"> <img id="foto-perfil" src="../images/Alanzoka.jpg" alt="Foto de perfil"></a>
+                </div>
+            </nav>
+        </header>
     </div>
-    
+
+    <main>
+        <div>
+            <article id="info">
+                <img id="perfil-foto" src="../images/Alanzoka.jpg" alt=" Imagem de perfil">
+                <section class="perfil">    
+                    <h2> Nossa_Velho </h2>
+
+                    <div class="n">
+                        
+                        <p> 3 publicações </p>
+                        <p> 128 Seguindo</p>
+                        <p> 214 Seguidores</p>
+                    </div>
+                    <div class="n">
+                        <p id="nome"> Alan Ferreira </p>
+                        <span> Editar Perfil </span>
+                        <span> Sair </span>
+                    </div>
+                </section>
+            </article>
+            <article id="publicacao">
+                <img id="velha" src="../images/Vector - jogo da velha.svg" alt="">
+                <p> Publicações </p>
+            </article>
+
+            <section id="publicacoes">
+                <!-- POST -->
+                <article class="card-publi">
+                    <section class="card-publi-cabecalho">
+                        <img id="perfil-post" src="../images/Alanzoka.jpg">
+                        <a href="../Pages/perfil.html">
+                            Nossa_Velho
+                        </a>
+                        <img src="" alt="Seria a imagem de verificado">
+                    </section>
+
+                    <p class = descricao>Podem me ajudar a arromar o PC</p>
+
+                    <div class="interacoes">
+                        <img src="../images/Vector - coração.svg" id="acoes" alt=" imagem de coração (curtida)">
+                        <img src="../images/Vector - Balão.svg" id="acoes" alt=" imagem de balão de fala (emojis)">
+                    </div>  
+                        <p class="curtidas"> 150 curtidas</p>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
 </body>
+
 </html>

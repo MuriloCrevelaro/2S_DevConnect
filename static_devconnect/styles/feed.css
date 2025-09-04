@@ -156,13 +156,6 @@ div::-webkit-scrollbar{
     cursor: pointer;
 }
 
-#perfil-post{
-    display: flex;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    gap: 100px;
-}
 
 a{
     text-decoration: none;
@@ -196,6 +189,11 @@ a{
 #comentarios-t{
     opacity: 50%;
     color: var(--cor-roxo-escuro);
+    background-color: transparent;
+    border: none;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    cursor: pointer;
 }
 
 #linha{
