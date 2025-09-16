@@ -6,6 +6,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 main > div{
@@ -13,7 +14,6 @@ main > div{
     display: flex;  /* Ativa o flex */
     padding: 5px;
     border: var(--borda2);
-    border-radius: var(--borda-arredondada);
     /* justify-content: space-between; */
     gap: 10px;
     flex-direction: column;
@@ -60,7 +60,6 @@ form{
     gap: 10px;
     
     background-color: var(--cor-cinsa);
-    border-radius: var(--borda-arredondada);
     /* background-color: aqua; */
 }
 
@@ -195,7 +194,7 @@ section{
 #texto-campo-upload{
     display: inline-block; /* herdou do block - height, widthe margin-top/bottom
     /*herdou do line - por padrão fica um do lado do outro e ocupa inicialmento o tamanho do conteudo*/
-    background-color: var(--cor-roxo);
+    background-color: #D9D9D9;
     border-radius: var(--borda-arredondada);
     width: 100%;
     padding: 10px;

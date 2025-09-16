@@ -12,6 +12,7 @@ main > div{
     background-color: rgb(255, 255, 255);
     display: flex;  /* Ativa o flex */
     border: var(--borda2);
+    border-radius: var(--borda-arredondada);
     /* height: 500px; */
     /* justify-content: space-between; */
     gap: 15px;

@@ -13,9 +13,10 @@
     --cor-cinsa: #f8f8f8;
     --cor-cinsa2: #999;
     --cor-azul: #5f9efd;
+    --cor-azul-escuro: #26426c;
 
     --borda: 2px solid var(--cor-preto);
-    --borda2: 2px solid var(--cor-azul);
+    --borda2: 2px solid var(--cor-azul-escuro);
     --borda-arredondada: 10px;
 
     
